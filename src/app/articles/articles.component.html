@@ -1,0 +1,62 @@
+<div class="row">
+  <div class="col-md-12">
+    <ul class="nav nav-tabs justify-content-center nav-fill">
+      <li class="nav-item">
+        <a class="nav-link" href="#" (click)="ShowDiv('A')"> Article 1 </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" (click)="ShowDiv('B')">Article 2 </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" (click)="ShowDiv('C')"> Article 3 </a> 
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+<div class="row">
+  <!-- ARTICLE 1-->
+  <div class="col-md-12" *ngIf="currDiv == 'A'">
+    <h2> Titre de l'article 1 </h2>
+    <img src="/assets/images/fx3ERA4t_400x400.jpg" alt="">
+    <p class="lead">
+
+      
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+      when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      It has survived not only five centuries, <br> <br> but also the leap into electronic typesetting, remaining
+      essentially unchanged.
+      It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+      and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+  </div>
+
+
+  <!-- ARTICLE 2 -->
+  <div class="col-md-12" *ngIf="currDiv == 'B'">
+    <h2> Titre de l'article 2 </h2>
+    <img src="/assets/images/VS Code.png" alt="">
+
+    <p>
+      Test contenu de l'article bla bla bla bla bla <br> tralalala
+      <br> youpi youpi , <br> 
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    </p>
+  </div>
+
+  <!-- ARTICLE 3 -->
+  <div class="col-md-12" *ngIf="currDiv == 'C'" >
+    <h2> Titre de l'article 3 </h2>
+    <img src="/assets/images/node.png" alt="">
+    <p>
+      Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+      condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec
+      sed odio dui.
+    </p>
+  </div>
+</div>
